@@ -1,11 +1,16 @@
 $fontArial12: normal 11px/1.2 Arial, Helvetica, sans-serif;
 
-@mixin PressStart2P( $value ) {
-	font-family: 'Press Start 2P', cursive;
+@mixin futura_medium( $value ) {
+	font-family: 'futura_medium', cursive;
 	font-size:$value;
 	line-height:1.1;
 	font-weight:normal;
 }
-
+@mixin gillsans( $value ) {
+  font-family: 'gillsans', cursive;
+  font-size:$value;
+  line-height:1.1;
+  font-weight:normal;
+}
 /*COLOR*/
 $colorBlack:#000;

@@ -3,7 +3,7 @@
 html, body{width:100%; min-width:640px; }
 body {
 	font: $fontArial12; color:#fff;
-	background: #010102;
+	background: #000;
 }
 a{text-decoration: none;}
 .clear{clear:both;}
@@ -17,4 +17,50 @@ a{text-decoration: none;}
   width: 640px;
   margin: 0 auto;
   position: relative;
+}
+
+.form-horizontal{
+  width: 258px;
+  margin: 15px auto;
+  .form-group{
+    input[type="text"]{
+      width: 235px;
+      height: 33px;
+      border: 1px solid #fff;
+      padding: 0 12px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      @include gillsans(12px);
+      &::-webkit-input-placeholder{ /* WebKit browsers */
+          color:    #000;
+      }
+      &:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+          color:    #000;
+      }
+      &::-moz-placeholder{ /* Mozilla Firefox 19+ */
+          color:    #000;
+      }
+      &:-ms-input-placeholder{ /* Internet Explorer 10+ */
+          color:    #000;
+      }
+      &.error{
+        border: 1px solid red;
+      }
+    }
+    button[type="submit"]{
+      background: #9f845c;
+      border: 1px solid #9f845c;
+      border: none;
+      @include futura_medium(14px);
+      color: #fff; 
+      width: 100%;
+      padding: 10px 0;
+      cursor: pointer;
+    }
+  }
+  .alert{
+    @include futura_medium(16px);
+    padding-bottom: 15px;
+    color: #fff;
+  }
 }

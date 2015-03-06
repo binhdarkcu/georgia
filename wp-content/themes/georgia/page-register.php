@@ -74,7 +74,13 @@
             <section>
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="page-header">
-                        <h2>Sign up</h2>
+                        <a href="<?php echo bloginfo('home');?>">
+                        	<img src="images/logo.png" alt="logo"/>
+                        </a>
+                        <p>
+                        	Wilt u lid worden?<br/> 
+							Vul dan hier uw gegevens in.
+                        </p>
                     </div>
 
                     <form id="registerForm" method="post" class="form-horizontal" action="">

@@ -1,0 +1,11 @@
+.page-header{
+  a.logo{
+    display: table;
+    margin: 0 auto;
+  }
+  p{
+    padding-top: 32px;
+    @include futura_medium(18px);
+    text-align: center;
+  }
+}
