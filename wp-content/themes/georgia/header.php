@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><?php the_title() ?></title>
+    <title>GEORGIA Bussiness Club</title>
 	<base href="<?php echo bloginfo('template_url') ?>/" />
     <link rel="stylesheet" href="css/all.css"/>
     <script type="text/javascript" src="vendor/jquery/jquery-1.10.2.min.js"></script>
