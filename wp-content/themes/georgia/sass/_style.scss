@@ -1,0 +1,20 @@
+
+/* ! PRIMARY STYLES */
+html, body{width:100%; min-width:640px; }
+body {
+	font: $fontArial12; color:#fff;
+	background: #010102;
+}
+a{text-decoration: none;}
+.clear{clear:both;}
+
+.content700{width:700px;}
+.content820{width:820px;}
+.content890{width:890px;}
+.content940{width:940px;}
+
+.wrapper{
+  width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
