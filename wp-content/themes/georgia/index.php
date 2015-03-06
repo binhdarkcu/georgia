@@ -40,7 +40,12 @@
         $results = $wpdb->insert('profile', $data);
         if($results){
             $logged = true;
-            $message = "Register success";
+			$sendmail = register_email($data['first_name'],$data['company'], $data['email'],$data['phone_number'] );
+			if($sendmail) 
+			    $message = "Register success";
+			else 
+			    $message = 'Current can not register. Please try again.';
+
             unset($data['password']);
             $_SESSION['user'] = $data;
             //$link = get_site_url().'/users';
