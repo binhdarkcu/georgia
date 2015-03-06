@@ -16,8 +16,8 @@
 
     session_start();
     if(isset($_SESSION['user'])){
-        $link = get_site_url().'/users';
-        echo "<script>window.location.href = '$link';</script>";
+        //$link = get_site_url().'/users';
+        //echo "<script>window.location.href = '$link';</script>";
     }
     $logged = false;
     $message = "";

@@ -24,12 +24,13 @@ a{text-decoration: none;}
   margin: 15px auto;
   .form-group{
     input[type="text"]{
-      width: 235px;
-      height: 33px;
+      width: 233px;
+      height: 31px;
       border: 1px solid #fff;
       padding: 0 12px;
       border-radius: 4px;
       margin-bottom: 8px;
+      outline: none;
       @include gillsans(12px);
       &::-webkit-input-placeholder{ /* WebKit browsers */
           color:    #000;
@@ -49,13 +50,14 @@ a{text-decoration: none;}
     }
     button[type="submit"]{
       background: #9f845c;
-      border: 1px solid #9f845c;
+      border: 1px solid #9f845c!important;
       border: none;
       @include futura_medium(14px);
       color: #fff; 
       width: 100%;
       padding: 10px 0;
       cursor: pointer;
+      outline: none;
     }
   }
   .alert{
