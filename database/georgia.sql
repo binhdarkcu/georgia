@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 06, 2015 at 11:28 AM
+-- Generation Time: Mar 06, 2015 at 05:24 PM
 -- Server version: 5.5.36
 -- PHP Version: 5.4.27
 
@@ -41,7 +41,18 @@ CREATE TABLE IF NOT EXISTS `profile` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `profile`
+--
+
+INSERT INTO `profile` (`id`, `first_name`, `last_name`, `company`, `street`, `nr`, `city`, `postal_code`, `phone_number`, `email`, `password`, `created`, `modified`) VALUES
+(2, 'binh', NULL, 'bliss', NULL, NULL, NULL, NULL, 2147483647, 'binhdarkcu@gmail.com', NULL, '2015-03-06 03:44:23', '2015-03-06 03:44:23'),
+(4, 'lam thanh', NULL, 'bliss', NULL, NULL, NULL, NULL, 967891344, 'binh@bliss-interactive.net', NULL, '2015-03-06 03:50:06', '2015-03-06 03:50:06'),
+(5, 'binh', NULL, 'bliss', NULL, NULL, NULL, NULL, 967891344, 'binh@bliss-interactive.net', NULL, '2015-03-06 04:19:44', '2015-03-06 04:19:44'),
+(6, 'binh', NULL, 'lam', NULL, NULL, NULL, NULL, 967891344, 'binh@bliss-interactive.net', NULL, '2015-03-06 04:21:50', '2015-03-06 04:21:50'),
+(7, 'binh', NULL, 'lam', NULL, NULL, NULL, NULL, 967891344, 'binh@bliss-interactive.net', NULL, '2015-03-06 04:23:42', '2015-03-06 04:23:42');
 
 -- --------------------------------------------------------
 
