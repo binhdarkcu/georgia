@@ -16,8 +16,8 @@
 
     session_start();
     if(isset($_SESSION['user'])){
-        //$link = get_site_url().'/users';
-        //echo "<script>window.location.href = '$link';</script>";
+        /*$link = get_site_url().'/users';
+        echo "<script>window.location.href = '$link';</script>";*/
     }
     $logged = false;
     $message = "";
@@ -48,18 +48,13 @@
 
             unset($data['password']);
             $_SESSION['user'] = $data;
-            //$link = get_site_url().'/users';
-            //echo "<script>setTimeout(function(){window.location.href = '$link';},1000);</script>";
+            /*$link = get_site_url().'/users';
+            echo "<script>setTimeout(function(){window.location.href = '$link';},1000);</script>";*/
         }
         else{
             $message = "Register failed";
         }
     }
-    
-    
-    
-    
-
 ?>
 <?php get_header();?>
 
