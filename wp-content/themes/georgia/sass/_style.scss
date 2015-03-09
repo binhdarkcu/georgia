@@ -22,6 +22,9 @@ a{text-decoration: none;}
 .form-horizontal{
   width: 258px;
   margin: 15px auto;
+  &.success{
+    display: none;
+  }
   .form-group{
     input[type="text"]{
       width: 233px;
@@ -60,9 +63,11 @@ a{text-decoration: none;}
       outline: none;
     }
   }
-  .alert{
-    @include futura_medium(16px);
-    padding-bottom: 15px;
-    color: #fff;
-  }
+}
+.alert{
+  @include futura_medium(16px);
+  padding-bottom: 0px;
+  padding-top: 15px;
+  color: #fff;
+  text-align: center;
 }

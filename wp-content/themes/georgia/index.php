@@ -41,8 +41,10 @@
         if($results){
             $logged = true;
 			$sendmail = register_email($data['first_name'],$data['company'], $data['email'],$data['phone_number'] );
-			if($sendmail) 
-			    $message = "Register success";
+			if($sendmail){ 
+			    $message = "Bedankt! Uw aanvraag werd succesvol verstuurd, wij contacteren u zo snel mogelijk.";
+				$success = "success";
+			}		
 			else 
 			    $message = 'Current can not register. Please try again.';
 
@@ -72,16 +74,16 @@
 							Vul dan hier uw gegevens in.
                         </p>
                     </div>
-
-                    <form id="registerForm" method="post" class="form-horizontal" action="">
-                        <?php
+						<?php
                             if($message != "")
                             {
                                 $alert = $logged == true ? "alert-success" : "alert-danger";
                                 echo '<div class="alert '.$alert.'">'.$message.'</div>';
                             }
                                 
-                        ?>    
+                        ?> 
+                    <form id="registerForm" method="post" class="form-horizontal <?php echo $success;?>" action="">
+                         
                         <div class="form-group">
                             <div class="col-lg-5">
                                 <input type="text" class="form-control" name="first_name" placeholder="Naam" />
