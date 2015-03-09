@@ -20,7 +20,7 @@ function smtp_activation() {
 // Add options page in the admin menu
 add_action('admin_menu','smtp_menu');
 function smtp_menu() {
-	add_options_page('Cài đặt Email', 'Cài đặt Email', 'manage_options', 'smtp', 'smtp_options_page');
+	add_options_page('Setup Email', 'Setup Email', 'manage_options', 'smtp', 'smtp_options_page');
 }
 
 // Add "Settings" link to the plugins page
@@ -43,8 +43,8 @@ function smtp_options_page() {
     if (isset($_POST['smtp_test']) && $_POST['smtp_test'] == 'Send' && isset($_POST['to']) && is_email($_POST['to'])) {
             
             $to = $_POST['to'];
-            $subject = 'Kiểm tra cấu hình email';
-            $message = 'Đây là email gửi thử từ website: ' . get_site_url();
+            $subject = 'Test sending mail';
+            $message = 'Send to: ' . get_site_url();
     
             // Send the test mail
             $result = wp_mail($to, $subject, $message);
@@ -53,16 +53,16 @@ function smtp_options_page() {
             if ($result) {
                 ?>
                 <div id="message" class="updated fade">
-                <p><strong>Kiểm tra gửi thử</strong></p>
-                <p>Gửi email thử thành công!</p>
+                <p><strong>Test sending mail</strong></p>
+                <p>Sent email!</p>
                 </div>
                 <?php
             }
             else {
                 ?>
                 <div id="message" class="error">
-                <p><strong>Lỗi gửi đi</strong></p>
-                <p>Có lỗi xảy ra, vui lòng kiểm tra lại nội dung kết nối tài khoản.</p>
+                <p><strong>Error sent </strong></p>
+                <p>Error sent , Please help to check the setup's informations.</p>
                 </div>
                 <?php
             }    
@@ -70,7 +70,7 @@ function smtp_options_page() {
 	
     ?>
     <div class="wrap">
-        <h2>Cài đặt Email SMTP</h2>
+        <h2>Setup Email SMTP</h2>
         
         <form action="options.php" method="post">
             <?php settings_fields('smtp_options'); ?>
@@ -80,8 +80,8 @@ function smtp_options_page() {
             </p>
         </form>
         
-        <h3>Kiểm tra thử</h3>
-        <p>Nhập địa chỉ email muốn thử vào đây.</p>
+        <h3>Test sending mail</h3>
+        <p>To email.</p>
         <form action="options-general.php?page=smtp" method="post">
             <table class="optiontable form-table">
                 <tr valign="top">
@@ -112,7 +112,7 @@ function smtp_admin_init(){
 }
 
 function smtp_section() {
-    echo '<p>Cài đặt kết nối Email.</p>';
+    echo '<p>Setup Email.</p>';
 }
 
 function smtp_host() {
