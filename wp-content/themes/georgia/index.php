@@ -142,17 +142,12 @@ $(document).ready(function() {
                             }
                         }
                     }
-            },
-            'phone_number': { 
-                required: true, 
-                minlength: 9, 
             }
 		},
 		messages: {
             "first_name": "",
             "company": "",
-            "email":"",
-            "phone_number":""
+            "email":""
         },
 		submitHandler: function(form) {
             form.submit();
