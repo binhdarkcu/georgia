@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'georgia');
+define('DB_NAME', 'ID174221_georgia');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'ID174221_georgia');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'admin');
+define('DB_PASSWORD', '62Org1a1');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql025.webhosting.be');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -79,8 +79,8 @@ if ( !defined('ABSPATH') )
 $domainName =  isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] != "" ? $_SERVER['SERVER_NAME'] : "" ;
 if($domainName == "")
 	$domainName =  isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] != "" ? $_SERVER['HTTP_HOST'] : "" ;
-define('WP_HOME','http://'.$domainName.'/PHP/BLISS/www/YVES/GEORGIA/sourcecode/BE/');
-define('WP_SITEURL','http://'.$domainName.'/PHP/BLISS/www/YVES/GEORGIA/sourcecode/BE/');
+define('WP_HOME','http://georgia-bc.be/');
+define('WP_SITEURL','http://georgia-bc.be/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
