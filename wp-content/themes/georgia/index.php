@@ -103,7 +103,7 @@
 
                         <div class="form-group">
                             <div class="col-lg-5">
-                                <input type="text" class="form-control" name="phone_number" placeholder="telefoon nummer"/>
+                                <input type="text" class="form-control" name="phone_number" placeholder="Telefoon nummer"/>
                             </div>
                         </div>
                         
